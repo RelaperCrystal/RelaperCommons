@@ -2,6 +2,11 @@
 
   <PropertyGroup>
     <TargetFramework>net48</TargetFramework>
+    <Authors>RelaperCrystal</Authors>
+    <Description>Common library of RelaperCrystal's mods</Description>
+    <PackageLicenseExpression>GPL-3.0</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/RelaperCrystal/RelaperCommons</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/RelaperCrystal/RelaperCommons</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>

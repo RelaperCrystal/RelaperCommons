@@ -30,6 +30,7 @@ namespace RelaperCommons
 
         /// <inheritdoc cref="Blip.EnableRoute(System.Drawing.Color)"/>
         /// <param name="blip">The blip to set the color.</param>
+        /// <param name="color"><inheritdoc /></param>
         public static void EnableRoute(this Blip blip, BlipColor color)
         {
             blip.SetRouteColor(color);

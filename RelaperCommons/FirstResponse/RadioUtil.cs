@@ -18,6 +18,10 @@ namespace RelaperCommons.FirstResponse
         /// <param name="speaker">The speaker.</param>
         /// <param name="text">The text.</param>
         /// <returns>The handle of the notification.</returns>
+        /// <remarks>
+        /// <c>{player}</c> in the text will be replaced to the player's character name
+        /// (e.g. Jenny Sandusky).
+        /// </remarks>
         public static uint DisplayRadioQuote(string speaker, string text)
         {
             return Game.DisplayNotification($"~b~{speaker}~w~: {text.Replace("{player}", Functions.GetPersonaForPed(Game.LocalPlayer.Character).FullName)}");

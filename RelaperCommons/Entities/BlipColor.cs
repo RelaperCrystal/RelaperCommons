@@ -248,6 +248,9 @@ namespace RelaperCommons.Entities
         /// The blue.
         /// </summary>
         Blue = 57,
+        /// <summary>
+        /// The east bay.
+        /// </summary>
         EastBay = 58,
         /// <summary>
         /// The yellow.
@@ -261,6 +264,9 @@ namespace RelaperCommons.Entities
         /// The alto gray.
         /// </summary>
         AltoGray = 62,
+        /// <summary>
+        /// The jelly bean blue.
+        /// </summary>
         JellyBeanBlue = 63,
         /// <summary>
         /// The darker orange.
