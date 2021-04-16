@@ -9,10 +9,16 @@
     <RepositoryUrl>https://github.com/RelaperCrystal/RelaperCommons</RepositoryUrl>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <WarningLevel>5</WarningLevel>
+    <DocumentationFile>C:\Programs\DevProjs\RelaperCommons\RelaperCommons\RelaperCommons.xml</DocumentationFile>
+  </PropertyGroup>
+
   <ItemGroup>
     <Reference Include="LSPD First Response">
       <HintPath>D:\SDK\LSPD First Response.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.CSharp" />
     <Reference Include="RagePluginHook">
       <HintPath>D:\SDK\RagePluginHookSDK.dll</HintPath>
     </Reference>

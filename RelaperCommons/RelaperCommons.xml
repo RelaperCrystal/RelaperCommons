@@ -1,0 +1,459 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RelaperCommons</name>
+    </assembly>
+    <members>
+        <member name="T:RelaperCommons.BlipExtensions">
+            <summary>Extension methods of <see cref="T:Rage.Blip" /> class.</summary>
+            <seealso cref="T:Rage.Blip" />
+        </member>
+        <member name="M:RelaperCommons.BlipExtensions.SetColor(Rage.Blip,RelaperCommons.Entities.BlipColor)">
+            <summary>Sets the color of this <see cref="T:Rage.Blip" /> to the predefined system blip color.</summary>
+            <param name="blip">The blip to set color.</param>
+            <param name="color">The color.</param>
+            <remarks>
+              <note type="important">Do not set <see cref="P:Rage.Blip.Color" /> once you set this color. If you want to set anyway, imagine it's secondary color (mix with this).</note>
+            </remarks>
+        </member>
+        <member name="M:RelaperCommons.BlipExtensions.SetRouteColor(Rage.Blip,RelaperCommons.Entities.BlipColor)">
+            <summary>Sets the route color of the <see cref="T:Rage.Blip" /> to a predefined system color.</summary>
+            <param name="blip">The blip.</param>
+            <param name="color">The color.</param>
+        </member>
+        <member name="M:RelaperCommons.BlipExtensions.EnableRoute(Rage.Blip,RelaperCommons.Entities.BlipColor)">
+            <inheritdoc cref="M:Rage.Blip.EnableRoute(System.Drawing.Color)"/>
+            <param name="blip">The blip to set the color.</param>
+            <param name="color"><inheritdoc /></param>
+        </member>
+        <member name="T:RelaperCommons.Entities.BlipColor">
+            <summary>
+              <para>An enumeration of all predefined blip colors.</para>
+              <para>To set literal colors, please set to <see cref="F:RelaperCommons.Entities.BlipColor.White" /> then use <see cref="P:Rage.Blip.Color" /> property to set color of type <see cref="T:System.Drawing.Color" />.</para>
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.White">
+            <summary>The white color.</summary>
+            <seealso cref="T:RelaperCommons.BlipExtensions" />
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.Red">
+            <summary>
+            The red (<see cref="P:System.Drawing.Color.Red" />).
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.GreenAutomatic">
+            <summary>
+            The green color which will be <see cref="F:RelaperCommons.Entities.BlipColor.Red"/> or <see cref="F:RelaperCommons.Entities.BlipColor.Blue"/> based on <see cref="P:Rage.Blip.IsFriendly"/>.
+            </summary>
+            <remarks>
+            If <see cref="P:Rage.Blip.IsFriendly"/> is set to true, it will be <see cref="F:RelaperCommons.Entities.BlipColor.Blue"/>; otherwise, it will be <see cref="F:RelaperCommons.Entities.BlipColor.Red"/>.
+            </remarks>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.BlueAutomatic">
+            <summary>
+            The blue color which will be <see cref="F:RelaperCommons.Entities.BlipColor.Red"/> if <see cref="P:Rage.Blip.IsFriendly"/> was set to <c>false</c>.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.Automatic">
+            <summary>
+            The white color which will be <see cref="F:RelaperCommons.Entities.BlipColor.Red"/> or <see cref="F:RelaperCommons.Entities.BlipColor.Blue"/> based on <see cref="P:Rage.Blip.IsFriendly"/>.
+            </summary>
+            <remarks>
+            If <see cref="P:Rage.Blip.IsFriendly"/> is set to true, it will be <see cref="F:RelaperCommons.Entities.BlipColor.Blue"/>; otherwise, it will be <see cref="F:RelaperCommons.Entities.BlipColor.Red"/>.
+            </remarks>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.YellowAutomatic">
+            <summary>
+            The yellow color which will be <see cref="F:RelaperCommons.Entities.BlipColor.Red"/> or <see cref="F:RelaperCommons.Entities.BlipColor.Blue"/> based on <see cref="P:Rage.Blip.IsFriendly"/>.
+            </summary>
+            <remarks>
+            If <see cref="P:Rage.Blip.IsFriendly"/> is set to true, it will be <see cref="F:RelaperCommons.Entities.BlipColor.Blue"/>; otherwise, it will be <see cref="F:RelaperCommons.Entities.BlipColor.Red"/>.
+            </remarks>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.LightRed">
+            <summary>
+            The light red.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.Violet">
+            <summary>
+            The violet.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.Pink">
+            <summary>
+            The pink.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.LightOrange">
+            <summary>
+            The light orange.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.LightBrown">
+            <summary>
+            The light brown.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.LightGreen">
+            <summary>
+            The light green.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.LightBlue">
+            <summary>
+            The light blue.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.LightPurple">
+            <summary>
+            The light purple.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.DarkPurple">
+            <summary>
+            The dark purple.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.Cyan">
+            <summary>
+            The cyan.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.LightYellow">
+            <summary>
+            The light yellow.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.Orange">
+            <summary>
+            The orange.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.LighterBlue">
+            <summary>
+            The lighter blue.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.DarkPink">
+            <summary>
+            The dark pink.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.DarkYellow">
+            <summary>
+            The dark yellow.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.DarkOrange">
+            <summary>
+            The dark orange.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.LightGray">
+            <summary>
+            The light gray.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.LightPink">
+            <summary>
+            The light pink.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.LemonGreen">
+            <summary>
+            The lemon green.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.ForestGreen">
+            <summary>
+            The forest green.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.ElectricBlue">
+            <summary>
+            The electric blue.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.BrightPurple">
+            <summary>
+            The bright purple.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.DarkerYellow">
+            <summary>
+            The darker yellow.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.DarkBlue">
+            <summary>
+            The dark blue.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.DarkCyan">
+            <summary>
+            The dark cyan.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.LighterBrown">
+            <summary>
+            The lighter brown.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.EvenLighterBlue">
+            <summary>
+            The lighter blue.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.LighterYellow">
+            <summary>
+            The lighter yellow.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.LighterPink">
+            <summary>
+            The lighter pink.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.LighterRed">
+            <summary>
+            The lighter red.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.Beige">
+            <summary>
+            The beige.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.AnotherWhite">
+            <summary>
+            Another white.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.DarkerBlue">
+            <summary>
+            The darker blue.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.LighterGray">
+            <summary>
+            The lighter gray.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.DarkGray">
+            <summary>
+            The dark gray.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.PinkRed">
+            <summary>
+            The pink red.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.SlightlyDarkerBlue">
+            <summary>
+            The slightly darker blue.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.LighterGreen">
+            <summary>
+            The lighter green.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.LighterOrange">
+            <summary>
+            The lighter orange.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.SlightlyDarkerWhite">
+            <summary>
+            The slightly darker white.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.Gold">
+            <summary>
+            The gold.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.AnotherOrange">
+            <summary>
+            Another orange.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.BrilliantRose">
+            <summary>
+            The brilliant rose.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.RedAutomatic">
+            <summary>
+            The red color which will be <see cref="F:RelaperCommons.Entities.BlipColor.Blue"/> if <see cref="P:Rage.Blip.IsFriendly"/> is set to <c>true</c>.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.MediumPurple">
+            <summary>
+            The medium purple.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.Salmon">
+            <summary>
+            The salmon.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.VeryDarkGreen">
+            <summary>
+            The very dark green.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.BlizzardBlue">
+            <summary>
+            The blizzard blue.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.OracleBlue">
+            <summary>
+            The oracle blue.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.Silver">
+            <summary>
+            The silver.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.VeryDarkBrown">
+            <summary>
+            The very dark brown.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.Blue">
+            <summary>
+            The blue.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.EastBay">
+            <summary>
+            The east bay.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.Yellow">
+            <summary>
+            The yellow.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.MulberryPink">
+            <summary>
+            The mulberry pink.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.AltoGray">
+            <summary>
+            The alto gray.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.JellyBeanBlue">
+            <summary>
+            The jelly bean blue.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.DarkerOrange">
+            <summary>
+            The darker orange.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.Mamba">
+            <summary>
+            The mamba.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.TransparentBlack">
+            <summary>
+            The transparent black.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.DeepRed">
+            <summary>
+            The deep red.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.AnotherOracleBlue">
+            <summary>
+            Another oracle blue.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.TransparentRed">
+            <summary>
+            The transparent red.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.TransparentBlue">
+            <summary>
+            The transparent blue.
+            </summary>
+        </member>
+        <member name="F:RelaperCommons.Entities.BlipColor.Purple">
+            <summary>
+            The purple.
+            </summary>
+        </member>
+        <member name="T:RelaperCommons.FirstResponse.RadioUtil">
+            <summary>
+            Provides tools to handle radio communication.
+            </summary>
+        </member>
+        <member name="M:RelaperCommons.FirstResponse.RadioUtil.DisplayRadioQuote(System.String,System.String)">
+            <summary>Displays an notification showing the speaker speaking the text.</summary>
+            <param name="speaker">The speaker.</param>
+            <param name="text">The text.</param>
+            <returns>The handle of the notification.</returns>
+            <remarks>
+            <c>{player}</c> in the text will be replaced to the player's character name
+            (e.g. Jenny Sandusky).
+            </remarks>
+        </member>
+        <member name="M:RelaperCommons.FirstResponse.RadioUtil.DisplayRadioQuoteUsingPosition(System.String,System.String,Rage.Vector3,System.Boolean)">
+            <summary>Displays the radio quote using position.</summary>
+            <param name="speaker">The speaker.</param>
+            <param name="text">The text.</param>
+            <param name="position">The position.</param>
+            <param name="street">if set to <c>true</c>, displays the street name.</param>
+            <returns>
+              The handle of the notification.
+            </returns>
+            <remarks>
+            <c>{position}</c> in the text will be replaced to the position display name, and <c>{player}</c> in the text will be replaced to the player's character name
+            (e.g. Jenny Sandusky).
+            </remarks>
+        </member>
+        <member name="T:RelaperCommons.LocationUtil">
+            <summary>
+              <para>Provides methods to handle locations.</para>
+            </summary>
+        </member>
+        <member name="M:RelaperCommons.LocationUtil.GetRandomPositionOnStreet(System.Single,System.Single)">
+            <summary>Gets a position around the player (usually on motorized roads) which is relatively safer for <see cref="T:Rage.Vehicle"/>s to cruise.</summary>
+            <param name="minimumDistance">The minimum distance.</param>
+            <param name="maximumDistance">The maximum distance.</param>
+            <returns>
+              <para>A <see cref="T:Rage.Vector3" /> indicating the generated spawn point.</para>
+            </returns>
+        </member>
+        <member name="M:RelaperCommons.LocationUtil.GetRandomPositionOnSidewalk(System.Single,System.Single)">
+            <summary>Gets a position around the player (usually on sidewalk) which is relatively safer for <see cref="T:Rage.Ped" />s to walk.</summary>
+            <param name="minimumDistance">The minimum distance.</param>
+            <param name="maximumDistance">The maximum distance.</param>
+            <returns>If success, the generated position; otherwise, returns <see cref="P:Rage.Vector3.Zero" />.<br /></returns>
+        </member>
+        <member name="T:RelaperCommons.VehicleExtensions">
+            <summary>
+            Provides extensions to <see cref="T:Rage.Vehicle"/>.
+            </summary>
+        </member>
+        <member name="M:RelaperCommons.VehicleExtensions.GetDisplayName(Rage.Vehicle)">
+            <summary>
+            Gets the localized display name of the vehicle.
+            </summary>
+            <param name="vehicle">The vehicle.</param>
+            <returns>The display name of vehicle, or <see cref="F:System.String.Empty"/> if not found.</returns>
+        </member>
+    </members>
+</doc>
