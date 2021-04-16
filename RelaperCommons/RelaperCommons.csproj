@@ -14,6 +14,10 @@
     <DocumentationFile>C:\Programs\DevProjs\RelaperCommons\RelaperCommons\RelaperCommons.xml</DocumentationFile>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>C:\Programs\DevProjs\RelaperCommons\RelaperCommons\RelaperCommons.xml</DocumentationFile>
+  </PropertyGroup>
+
   <ItemGroup>
     <Reference Include="LSPD First Response">
       <HintPath>D:\SDK\LSPD First Response.dll</HintPath>
