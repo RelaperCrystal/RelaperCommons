@@ -453,7 +453,15 @@
             Gets the localized display name of the vehicle.
             </summary>
             <param name="vehicle">The vehicle.</param>
-            <returns>The display name of vehicle, or <see cref="F:System.String.Empty"/> if not found.</returns>
+            <returns>The display name of vehicle, or <see langword="null"/> if not found.</returns>
+        </member>
+        <member name="M:RelaperCommons.VehicleExtensions.TryGetDisplayNameOfVehicleModel(Rage.Vehicle,System.String@)">
+            <summary>Tries to get the display name of specified vehicle model.</summary>
+            <param name="vehicle">The vehicle.</param>
+            <param name="result">The result.</param>
+            <returns>
+              <para>Returns true if a proper name has been found; otherwise, false.</para>
+            </returns>
         </member>
     </members>
 </doc>

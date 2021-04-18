@@ -7,6 +7,7 @@
     <PackageLicenseExpression>GPL-3.0</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/RelaperCrystal/RelaperCommons</PackageProjectUrl>
     <RepositoryUrl>https://github.com/RelaperCrystal/RelaperCommons</RepositoryUrl>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
