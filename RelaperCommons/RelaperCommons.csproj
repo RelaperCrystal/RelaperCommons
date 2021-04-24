@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net48</TargetFramework>
@@ -24,9 +24,7 @@
       <HintPath>D:\SDK\LSPD First Response.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="RagePluginHook">
-      <HintPath>D:\SDK\RagePluginHookSDK.dll</HintPath>
-    </Reference>
+    <Reference Include="System.Windows.Forms" />
   </ItemGroup>
 
 </Project>

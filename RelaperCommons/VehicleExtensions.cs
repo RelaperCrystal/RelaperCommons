@@ -1,4 +1,6 @@
-﻿using Rage;
+﻿using System;
+using Rage;
+using Rage.Exceptions;
 using Rage.Native;
 
 namespace RelaperCommons
@@ -8,6 +10,21 @@ namespace RelaperCommons
     /// </summary>
     public static class VehicleExtensions
     {
+        public static void RandomizeLicensePlate(this Vehicle vehicle)
+        {
+            if (vehicle == null) throw new ArgumentNullException(nameof(vehicle));
+            if (!vehicle.IsValid()) throw new InvalidHandleableException(vehicle);
+
+            vehicle.LicensePlate = MathHelper.GetRandomInteger(1, 9) +
+                MathHelper.GetRandomInteger(1, 9) +
+                ((char)MathHelper.GetRandomInteger('A', 'Z')).ToString() +
+                ((char)MathHelper.GetRandomInteger('A', 'Z')).ToString() +
+                ((char)MathHelper.GetRandomInteger('A', 'Z')).ToString() +
+                MathHelper.GetRandomInteger(1, 9) +
+                MathHelper.GetRandomInteger(1, 9) +
+                MathHelper.GetRandomInteger(1, 9);
+        }
+
         /// <summary>
         /// Gets the localized display name of the vehicle.
         /// </summary>
