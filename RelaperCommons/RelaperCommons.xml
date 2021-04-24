@@ -443,10 +443,42 @@
             <param name="maximumDistance">The maximum distance.</param>
             <returns>If success, the generated position; otherwise, returns <see cref="P:Rage.Vector3.Zero" />.<br /></returns>
         </member>
+        <member name="T:RelaperCommons.Utils.InputUtil">
+            <summary>
+            Provides methods to process user inputs (such as keyboard, mouse).
+            </summary>
+        </member>
+        <member name="M:RelaperCommons.Utils.InputUtil.IsKeyDown(System.Windows.Forms.Keys)">
+            <summary>
+            Determines whether the specified key is down in a safe condition.
+            </summary>
+            <param name="key">The key.</param>
+            <returns>
+              <c>true</c> if the specified key is down; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:RelaperCommons.Utils.InputUtil.IsKeyDownRightNow(System.Windows.Forms.Keys)">
+            <summary>
+            Determines whether the specified is down right now in a safe condition.
+            </summary>
+            <param name="key">The key.</param>
+            <returns>
+              <c>true</c> if the specified key is down; otherwise, <c>false</c>.
+            </returns>
+        </member>
         <member name="T:RelaperCommons.VehicleExtensions">
             <summary>
             Provides extensions to <see cref="T:Rage.Vehicle"/>.
             </summary>
+        </member>
+        <member name="M:RelaperCommons.VehicleExtensions.RandomizeLicensePlate(Rage.Vehicle)">
+            <summary>Randomizes the license plate.</summary>
+            <param name="vehicle">The vehicle.</param>
+            <exception cref="T:System.ArgumentNullException">The vehicle is null.</exception>
+            <exception cref="T:Rage.Exceptions.InvalidHandleableException">
+              <para>The vehicle is invalid.</para>
+            </exception>
+            <seealso cref="T:Rage.Vehicle" />
         </member>
         <member name="M:RelaperCommons.VehicleExtensions.GetDisplayName(Rage.Vehicle)">
             <summary>

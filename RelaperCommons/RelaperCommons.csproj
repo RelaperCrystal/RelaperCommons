@@ -4,10 +4,13 @@
     <TargetFramework>net48</TargetFramework>
     <Authors>RelaperCrystal</Authors>
     <Description>Common library of RelaperCrystal's mods</Description>
-    <PackageLicenseExpression>GPL-3.0</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/RelaperCrystal/RelaperCommons</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/RelaperCrystal/RelaperCommons</RepositoryUrl>
+    <PackageLicenseExpression>GPL-3.0-or-later</PackageLicenseExpression>
+    <PackageProjectUrl>https://gitlab.com/RelaperCrystal/RelaperCommons</PackageProjectUrl>
+    <RepositoryUrl>https://gitlab.com/RelaperCrystal/RelaperCommons</RepositoryUrl>
     <Version>1.0.1</Version>
+    <AssemblyVersion>1.2.0.0</AssemblyVersion>
+    <FileVersion>1.2.0.0</FileVersion>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -18,6 +21,10 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <DocumentationFile>C:\Programs\DevProjs\RelaperCommons\RelaperCommons\RelaperCommons.xml</DocumentationFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="RagePluginHook" Version="1.86.1" />
+  </ItemGroup>
 
   <ItemGroup>
     <Reference Include="LSPD First Response">

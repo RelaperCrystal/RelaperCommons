@@ -10,10 +10,16 @@ namespace RelaperCommons
     /// </summary>
     public static class VehicleExtensions
     {
+        /// <summary>Randomizes the license plate.</summary>
+        /// <param name="vehicle">The vehicle.</param>
+        /// <exception cref="ArgumentNullException">The vehicle is null.</exception>
+        /// <exception cref="InvalidHandleableException">
+        ///   <para>The vehicle is invalid.</para>
+        /// </exception>
+        /// <seealso cref="Vehicle" />
         public static void RandomizeLicensePlate(this Vehicle vehicle)
         {
             if (vehicle == null) throw new ArgumentNullException(nameof(vehicle));
-            if (!vehicle.IsValid()) throw new InvalidHandleableException(vehicle);
 
             vehicle.LicensePlate = MathHelper.GetRandomInteger(1, 9) +
                 MathHelper.GetRandomInteger(1, 9) +
