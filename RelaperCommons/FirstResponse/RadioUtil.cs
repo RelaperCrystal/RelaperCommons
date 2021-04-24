@@ -27,6 +27,16 @@ namespace RelaperCommons.FirstResponse
             return Game.DisplayNotification($"~b~{speaker}~w~: {text.Replace("{player}", Functions.GetPersonaForPed(Game.LocalPlayer.Character).FullName)}");
         }
 
+        /// <summary>
+        /// Displays an notification showing the player speaking the text.
+        /// </summary>
+        /// <param name="text">The text.</param>
+        /// <returns>The handle of the notification.</returns>
+        public static uint DisplayPlayerRadioQuote(string text)
+        {
+            return DisplayRadioQuote(Functions.GetPersonaForPed(Game.LocalPlayer.Character).FullName, text);
+        }
+
         /// <summary>Displays the radio quote using position.</summary>
         /// <param name="speaker">The speaker.</param>
         /// <param name="text">The text.</param>
