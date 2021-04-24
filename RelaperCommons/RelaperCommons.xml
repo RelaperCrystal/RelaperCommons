@@ -410,6 +410,13 @@
             (e.g. Jenny Sandusky).
             </remarks>
         </member>
+        <member name="M:RelaperCommons.FirstResponse.RadioUtil.DisplayPlayerRadioQuote(System.String)">
+            <summary>
+            Displays an notification showing the player speaking the text.
+            </summary>
+            <param name="text">The text.</param>
+            <returns>The handle of the notification.</returns>
+        </member>
         <member name="M:RelaperCommons.FirstResponse.RadioUtil.DisplayRadioQuoteUsingPosition(System.String,System.String,Rage.Vector3,System.Boolean)">
             <summary>Displays the radio quote using position.</summary>
             <param name="speaker">The speaker.</param>
@@ -442,6 +449,132 @@
             <param name="minimumDistance">The minimum distance.</param>
             <param name="maximumDistance">The maximum distance.</param>
             <returns>If success, the generated position; otherwise, returns <see cref="P:Rage.Vector3.Zero" />.<br /></returns>
+        </member>
+        <member name="T:RelaperCommons.Utils.DialogueList">
+            <summary>
+            Represents a list of dialogues.
+            </summary>
+        </member>
+        <member name="M:RelaperCommons.Utils.DialogueList.#ctor(Rage.Ped)">
+            <summary>
+            Initializes a new instance of the <see cref="T:RelaperCommons.Utils.DialogueList"/> class.
+            </summary>
+            <param name="subject">The subject.</param>
+        </member>
+        <member name="M:RelaperCommons.Utils.DialogueList.#ctor(Rage.Ped,RelaperCommons.Utils.IDialogue[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:RelaperCommons.Utils.DialogueList"/> class.
+            </summary>
+            <param name="dialogues">The dialogues.</param>
+            <param name="subject">The subject ped.</param>
+        </member>
+        <member name="P:RelaperCommons.Utils.DialogueList.CurrentPosition">
+            <summary>
+            Gets or sets the current position.
+            </summary>
+            <value>
+            The current position.
+            </value>
+        </member>
+        <member name="P:RelaperCommons.Utils.DialogueList.Subject">
+            <summary>
+            Gets or sets the subject.
+            </summary>
+            <value>
+            The subject.
+            </value>
+        </member>
+        <member name="M:RelaperCommons.Utils.DialogueList.Trigger">
+            <summary>
+            Triggers this instance.
+            </summary>
+        </member>
+        <member name="T:RelaperCommons.Utils.Dialogues.FleeDialogue">
+            <summary>
+            Represents a dialogue triggers a pursuit.
+            </summary>
+            <seealso cref="T:RelaperCommons.Utils.Dialogues.TextDialogue" />
+        </member>
+        <member name="M:RelaperCommons.Utils.Dialogues.FleeDialogue.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:RelaperCommons.Utils.Dialogues.FleeDialogue"/> class.
+            </summary>
+            <param name="speaker">The speaker.</param>
+            <param name="text">The text.</param>
+        </member>
+        <member name="P:RelaperCommons.Utils.Dialogues.FleeDialogue.Pursuit">
+            <summary>
+            Gets the pursuit triggered by this dialogue, or <see langword="null"/> if no pursuit is triggered.
+            </summary>
+            <value>
+            The pursuit triggered by this dialogue, or <see langword="null"/> if no pursuit is triggered.
+            </value>
+        </member>
+        <member name="T:RelaperCommons.Utils.Dialogues.TextDialogue">
+            <summary>
+            Represents a dialogue with nothing but text.
+            </summary>
+            <seealso cref="T:RelaperCommons.Utils.IDialogue" />
+        </member>
+        <member name="M:RelaperCommons.Utils.Dialogues.TextDialogue.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:RelaperCommons.Utils.Dialogues.TextDialogue"/> class.
+            </summary>
+            <param name="speaker">The speaker.</param>
+            <param name="text">The text.</param>
+        </member>
+        <member name="P:RelaperCommons.Utils.Dialogues.TextDialogue.Speaker">
+            <summary>
+            Gets the name of the speaker.
+            </summary>
+            <value>
+            The speaker.
+            </value>
+        </member>
+        <member name="P:RelaperCommons.Utils.Dialogues.TextDialogue.Text">
+            <summary>
+            Gets the text.
+            </summary>
+            <value>
+            The text.
+            </value>
+        </member>
+        <member name="P:RelaperCommons.Utils.Dialogues.TextDialogue.Callback">
+            <summary>
+            Gets or sets the callback.
+            </summary>
+            <value>
+            The callback.
+            </value>
+        </member>
+        <member name="T:RelaperCommons.Utils.IDialogue">
+            <summary>
+            Represents a dialogue.
+            </summary>
+        </member>
+        <member name="P:RelaperCommons.Utils.IDialogue.Speaker">
+            <summary>
+            Gets the name of the speaker.
+            </summary>
+            <value>
+            The speaker.
+            </value>
+        </member>
+        <member name="P:RelaperCommons.Utils.IDialogue.Text">
+            <summary>
+            Gets the text.
+            </summary>
+            <value>
+            The text.
+            </value>
+        </member>
+        <member name="P:RelaperCommons.Utils.IDialogue.Callback">
+            <summary>
+            Gets or sets the callback.
+            </summary>
+            <value>
+            The callback.
+            </value>
         </member>
         <member name="T:RelaperCommons.Utils.InputUtil">
             <summary>
