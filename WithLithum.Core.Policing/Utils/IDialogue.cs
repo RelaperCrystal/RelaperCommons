@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Rage;
 
-namespace RelaperCommons.Utils
+namespace WithLithum.Core.Policing.Utils
 {
     /// <summary>
     /// Represents a dialogue.

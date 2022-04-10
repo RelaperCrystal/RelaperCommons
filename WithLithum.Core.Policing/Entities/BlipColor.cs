@@ -1,6 +1,7 @@
 ﻿using System.Drawing;
+using WithLithum.Core.Policing;
 
-namespace RelaperCommons.Entities
+namespace WithLithum.Core.Policing.Entities
 {
     /// <summary>
     ///   <para>An enumeration of all predefined blip colors.</para>

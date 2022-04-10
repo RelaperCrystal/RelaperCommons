@@ -5,12 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 using Rage;
 
-namespace RelaperCommons.Utils.Dialogues
+namespace WithLithum.Core.Policing.Utils.Dialogues
 {
     /// <summary>
     /// Represents a dialogue with nothing but text.
     /// </summary>
-    /// <seealso cref="RelaperCommons.Utils.IDialogue" />
+    /// <seealso cref="IDialogue" />
     public class TextDialogue : IDialogue
     {
         /// <summary>

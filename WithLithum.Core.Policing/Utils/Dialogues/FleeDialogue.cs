@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using LSPD_First_Response.Mod.API;
 using Rage;
 
-namespace RelaperCommons.Utils.Dialogues
+namespace WithLithum.Core.Policing.Utils.Dialogues
 {
     /// <summary>
     /// Represents a dialogue triggers a pursuit.

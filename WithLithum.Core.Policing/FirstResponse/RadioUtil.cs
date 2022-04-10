@@ -7,7 +7,7 @@ using LSPD_First_Response.Mod.API;
 using Rage;
 using Rage.Native;
 
-namespace RelaperCommons.FirstResponse
+namespace WithLithum.Core.Policing.FirstResponse
 {
     /// <summary>
     /// Provides tools to handle radio communication.

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Rage;
 using Rage.Native;
 
-namespace RelaperCommons
+namespace WithLithum.Core.Policing
 {
     /// <summary>
     ///   <para>Provides methods to handle locations.</para>

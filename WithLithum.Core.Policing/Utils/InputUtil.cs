@@ -8,7 +8,7 @@ using System.Windows.Forms;
 using Rage;
 using Rage.Native;
 
-namespace RelaperCommons.Utils
+namespace WithLithum.Core.Policing.Utils
 {
     /// <summary>
     /// Provides methods to process user inputs (such as keyboard, mouse).

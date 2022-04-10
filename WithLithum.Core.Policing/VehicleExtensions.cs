@@ -3,7 +3,7 @@ using Rage;
 using Rage.Exceptions;
 using Rage.Native;
 
-namespace RelaperCommons
+namespace WithLithum.Core.Policing
 {
     /// <summary>
     /// Provides extensions to <see cref="Vehicle"/>.

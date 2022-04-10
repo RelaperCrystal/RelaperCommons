@@ -1,9 +1,9 @@
 ﻿using System;
 using Rage;
 using Rage.Native;
-using RelaperCommons.Entities;
+using WithLithum.Core.Policing.Entities;
 
-namespace RelaperCommons
+namespace WithLithum.Core.Policing
 {
     /// <summary>Extension methods of <see cref="Blip" /> class.</summary>
     /// <seealso cref="Blip" />
